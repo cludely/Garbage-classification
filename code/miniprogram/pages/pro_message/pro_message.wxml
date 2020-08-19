@@ -1,0 +1,31 @@
+<!--miniprogram/pages/pro_message/pro_message.wxml-->
+<view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">昵称</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.nickName}}</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">性别</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:if="{{userInfo.gender == 0}}">保密</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:elif="{{userInfo.gender == 1}}">男</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" wx:else>女</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">国家</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.country}}</view>
+            </navigator><navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">省份</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.province}}</view>
+            </navigator><navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">城市</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.city}}</view>
+            </navigator><navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">个性签名</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{db_userInfo.signature}}</view>
+            </navigator><navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" role="navigation">
+                <view class="weui-cell__bd">我的积分</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{db_userInfo.garde}}</view>
+            </navigator>
+        </view>
+
+

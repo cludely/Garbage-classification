@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Hazardous_waste/Hazardous_waste",
+    "pages/Recyclables/Recyclables",
+    "pages/Kitchen_waste/Kitchen_waste",
+    "pages/Other_waste/Other_waste",
+    "pages/search/search",
+    "pages/aboutme/aboutme",
+    "pages/pro_message/pro_message",
+    "pages/Answer/Answer",
+    "pages/test/test",
+    "pages/collection/collection",
+    "pages/camres/camres",
+    "pages/aboutus/aboutus",
+    "pages/function/function",
+    "pages/team/team"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "垃圾分类",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "分类",
+        "color": "#3D7EFF",
+        "borderStyle": "black",
+        "iconPath": "./assets/tabs/home.png",
+        "selectedIconPath": "./assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "color": "#3D7EFF",
+        "borderStyle": "black",
+        "iconPath": "./assets/tabs/search.png",
+        "selectedIconPath": "./assets/tabs/search-active.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "color": "#3D7EFF",
+        "borderStyle": "black",
+        "iconPath": "./assets/tabs/test.png",
+        "selectedIconPath": "./assets/tabs/test-active.png"
+      },
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "text": "我的",
+        "color": "#3D7EFF",
+        "borderStyle": "black",
+        "iconPath": "./assets/tabs/aboutme.png",
+        "selectedIconPath": "./assets/tabs/aboutme-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

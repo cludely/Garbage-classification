@@ -1,0 +1,46 @@
+<html dir="ltr" lang="zh" i18n-processed="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <link rel="stylesheet" type="text/css" href="/public/css/public.css">
+  <title id="title">{{ title }}</title>
+</head>
+
+<body>
+  <div id="listingParsingErrorBox">糟糕！Google Chrome无法解读服务器所发送的数据。请<a href="http://code.google.com/p/chromium/issues/entry">报告错误</a>，并附上<a href="LOCATION">原始列表</a>。</div>
+  <h1 id="header">{{currentUrl}}</h1>
+  <div id="parentDirLinkBox" style="display:none">
+    <a id="parentDirLink" class="icon up">
+    <span id="parentDirText">[上级目录]</span>
+  </a>
+  </div>
+  <table>
+    <thead>
+      <tr class="header" id="theader">
+        <th onclick="javascript:sortTable(0);">名称</th>
+        <th class="detailsColumn" onclick="javascript:sortTable(1);">
+          大小
+        </th>
+        <th class="detailsColumn" onclick="javascript:sortTable(2);">
+          修改日期
+        </th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <!-- 将原本的{{$value}}用item替换 -->
+      {{each files item}}
+      <tr>
+        <td data-value="apple/">
+          {{if item.indexOf(".")==-1 }}<a id="seturl" class="icon dir" href="/public{{myUrl}}{{item}}/">{{item}}</a>
+            {{else}}<a class="icon dir" href="/public{{myUrl}}{{item}}">{{item}}</a>
+          {{/if}}</td>
+        <td class="detailsColumn" data-value="0"></td>
+        <td class="detailsColumn" data-value="1509589967">2017/11/2 上午10:32:47</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+
+</html>

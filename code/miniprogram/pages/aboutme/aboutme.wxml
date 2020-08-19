@@ -1,0 +1,54 @@
+<!-- 头像栏 -->
+<view class="avatar-box">
+    <!-- 头像 -->
+    <view class="avatar center">
+        <image src='{{ avatarUrl }}'></image>
+    </view>
+    <!-- 用户名 -->
+    <text class="center">{{userInfo.nickName}}</text>
+    <!-- 个性签名 -->
+    <view class="center signature" bindtap="toggleDialog">
+        <text>{{db_userInfo.signature}}</text>
+    </view>
+</view>
+
+<!-- 列表栏 -->
+<view class='cell'>
+    <navigator class='cell-item arrow' url="/pages/pro_message/pro_message">
+        <text>个人资料</text>
+    </navigator>
+    <navigator class='cell-item arrow' url="/pages/collection/collection">
+        <text>我的收藏</text>
+    </navigator>
+    <navigator class='cell-item arrow'>
+        <text>我的错题集</text>
+    </navigator>
+    <navigator class='cell-item arrow' url="/pages/aboutus/aboutus">
+        <text>关于我们</text>
+    </navigator>
+</view>
+<!-- 意见反馈按钮 -->
+<button open-type='feedback' type='primary' class="suggestions">意见反馈</button>
+
+
+
+
+<!-- 修改个性签名弹窗 -->
+<view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__container">
+        <view class="center wrap">
+            <text class="signature-text">个性签名</text>
+            <form bindsubmit="sure" class="center wrap">
+                <input type="text" value="{{db_userInfo.signature}}" class="signature-class" name="signature" maxlength="40"></input>
+                <view class="signature-btn-box">
+                    <!-- <text class="signature-btn" hover-class="signature-btnhover">取消</text>
+                    <text class="signature-btn" hover-class="signature-btnhover">确定</text> -->
+                    <button class="signature-btn" hover-class="signature-btnhover" bindtap="unsure">取消</button>
+                    <button class="signature-btn" hover-class="signature-btnhover" form-type='submit'>确定</button>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>
+
+

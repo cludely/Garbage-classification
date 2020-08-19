@@ -1,0 +1,10 @@
+<!--miniprogram/pages/collection/collection.wxml-->
+<view class="base" wx:for="{{collectList}}" wx:for-item="listItem" wx:key="id">
+  <text>{{listItem.title}}</text>
+  <view class="select-box">
+    <text class="select-btn"  wx:for="{{listItem.content}}" wx:for-item="contentList" wx:key="index">{{contentList}} </text>
+  </view>
+  <text class="answer">答案：{{listItem.daan}}</text>
+</view>
+
+

@@ -1,0 +1,31 @@
+<!-- 题目索引 -->
+<!-- <view>{{index+1}}/50</view> -->
+
+
+<!-- 题干 -->
+<view class="father">
+<view class="timu" >{{index+1}}.{{postList[index].name}}</view>
+<!-- 选项 -->
+<view class="son">
+<scroll-view style="height: 800rpx; margin-top: 30rpx;">
+  <button id='A' class="anniu" bindtap="btnOpClick" style="background-color: {{bcA}}; width:90vw;">A.{{postList[index].content[0]}}</button>
+  <button id='B' class="anniu" bindtap="btnOpClick" style="background-color: {{bcB}}; width:90vw;">B.{{postList[index].content[1]}}</button>
+  <button id='C' class="anniu" bindtap="btnOpClick" style="background-color: {{bcC}}; width:90vw;">C.{{postList[index].content[2]}}</button>
+  <button id='D' class="anniu" bindtap="btnOpClick" style="background-color: {{bcD}}; width:90vw;">D.{{postList[index].content[3]}}</button>
+</scroll-view>
+</view>
+
+<!-- 切题按钮 -->
+<view class="huanti">
+  <button bindtap="lastQuestion" hover-class="btnhover">上一题</button>
+  <button bindtap="nextQuestion" hover-class="btnhover" >下一题</button>
+  <button bindtap="xianshi" class=""  hover-class="btnhover">{{ny}}</button>
+</view>
+</view>
+<!-- 底部积分栏 -->
+<view class="jifen">
+  <text>答对一题得2分，目前得分：{{defen}}</text>
+</view>
+
+<view class="collection" wx:if="{{is_collected}}" bindtap="collection">★</view>
+<view class="collection" wx:else bindtap="collection">☆</view>

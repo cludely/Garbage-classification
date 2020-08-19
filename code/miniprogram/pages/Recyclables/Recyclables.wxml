@@ -1,0 +1,25 @@
+<!--pages/Recyclables/Recyclables.wxml-->
+
+
+<!-- 列表 -->
+<scroll-view scroll-y="{{true}}" style="height:{{window_height}}px" scroll-into-view="{{to_list_title}}">
+  <view>
+    <image class="top_img" mode="scaleToFill" src="http://www.hzuljfl.cn:3000/public/img/Recyclables.png" lazy-load></image>
+  </view>
+  <view class="list_box" wx:for="{{ recycList }}"  wx:for-index="key" wx:for-item="value" wx:key="index">
+    <text class="list_title list_title_color" wx:if="{{ value }}" id="{{key}}">{{ key }}</text>
+    <text class="list_text" wx:for="{{ value }}" wx:key="index">{{ item.name }}</text>
+  </view>
+  <view class="loadmore">我是有底线的~（＞人＜；）</view>
+</scroll-view>
+<!-- 右边导航栏 -->
+<view class="right_nav" >
+ <view class="nav_item" bindtap="getCurrentIndex" data-index="{{key}}" wx:for="{{ recycList }}"  wx:for-index="key" wx:key="index" >
+ {{key}}
+ </view>
+</view>
+
+<!-- 提示层 -->
+<view class="{{isShowLayer ? 'tip_layer' : 'tip_layer_hide'}}">
+ {{layerLetter}}
+</view>

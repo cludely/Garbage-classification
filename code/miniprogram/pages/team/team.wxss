@@ -1,0 +1,14 @@
+/* pages/team/team.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.content{
+ /* margin:20rpx 60rpx 20rpx 76rpx; */
+ margin:20rpx;
+ text-indent: 76rpx;
+ text-align: left;
+}
+
+.top-img{
+  width:100%;
+}

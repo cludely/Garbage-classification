@@ -1,0 +1,6 @@
+/* pages/Recyclables/Recyclables.wxss */
+@import '../../style/waste.wxss';
+
+.list_title_color{
+  background-color: #2eb3ff;
+}

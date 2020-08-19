@@ -1,0 +1,21 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "本项目对网上的垃圾分类数据进行整合，提供尽量多的垃圾分类数据，开发者可以基于垃圾分类数据进行算法训练，应用开发...",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "art-template": "^4.13.2",
+    "baidu-aip-sdk": "^2.4.6",
+    "express": "^4.17.1",
+    "express-art-template": "^1.0.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "multiparty": "^4.2.1",
+    "pinyin": "^2.9.0"
+  }
+}

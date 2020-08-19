@@ -1,0 +1,14 @@
+<!--pages/function/function.wxml-->
+<image src="../../assets/images/logo.png" mode="aspectFill" class="top-img"></image>
+<view class='cell'>
+<view class='cell-item arrow' bindtap="tigger" data-num="1">首页</view>
+<view class="classname {{uhide==1?'':'hidden'}}">
+<view class="content">介绍垃圾的分类，点击相应分类的图片可跳转到具体页面，并可看到每种垃圾分类下的物品。在分类页面右侧有对应的字母按钮，用户点击按钮可以立刻滚动到对应字母的视图。</view>
+</view>
+<view class='cell-item arrow' bindtap="tigger" data-num="2">搜索功能</view>
+<view class="classname {{uhide==2?'':'hidden'}}"><view class="content">本小程序提供三种搜索功能，文本输入搜索、语音输入搜索和拍照识别搜索。其中用户使用图片搜索时，可以选择从相册选择图片或重新拍一张图片。</view></view>
+<view class='cell-item arrow' bindtap="tigger" data-num="3">测试功能</view>
+<view class="classname {{uhide==3?'':'hidden'}}"><view class="content">本小程序提供测试题，答对1题得2个积分，答对2题得4个积分，以此类推。同时可以在我的积分或个人资料页面中查看用户累计所得积分。也可以对题目进行收藏或取消收藏，收藏的题目可以在我的收藏页面中查看。</view></view>
+<view class='cell-item arrow' bindtap="tigger" data-num="4">收藏功能</view>
+<view class="classname {{uhide==4?'':'hidden'}}"><view class="content">在答题页面，当用户点击右下角的五角星时，则为用户收藏页面。同时若用户当前题目以收藏，则五角星颜色显示为透明；反之，则五角星颜色为黄色。</view></view>
+</view>

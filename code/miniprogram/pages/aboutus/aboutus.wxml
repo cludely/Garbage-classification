@@ -1,0 +1,13 @@
+<!--pages/about.wxml-->
+
+<image src="../../assets/images/logo.png" mode="aspectFit" class="top-img"></image>
+<!-- 列表栏 -->
+<view class='cell'>
+    <navigator class='cell-item arrow' url="/pages/function/function">
+        <text>功能介绍</text>
+    </navigator>
+    <navigator class='cell-item arrow' url="/pages/team/team">
+        <text>团队介绍</text>
+    </navigator>
+   
+</view>

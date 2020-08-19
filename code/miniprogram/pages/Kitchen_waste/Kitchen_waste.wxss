@@ -1,0 +1,7 @@
+/* pages/Kitchen_waste/Kitchen_waste.wxss */
+@import '../../style/waste.wxss';
+
+
+.list_title_color{
+  background-color: #82dac0;
+}

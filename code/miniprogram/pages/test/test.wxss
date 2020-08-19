@@ -1,0 +1,49 @@
+/* miniprogram/pages/test/test.wxss */
+/* page{
+  background-color: #C1FFC1;
+} */
+
+/* 图片 */
+.top_img{
+  width: 100%;
+  height: 280rpx;
+  margin-bottom: 50px;
+}
+
+.weui-btn {
+  display: block;
+  position: relative;
+  box-sizing:border-box;
+  margin-top: 15px;
+  font-size:18px;
+  text-align:center;
+  text-decoration:none;
+  border-radius:5px;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  color:#ffffff;
+}
+.bgcolor1{
+  background-color: #ef527c;
+}
+.bgcolor2{
+  background-color: #f2c264;
+}
+.bgcolor3{
+  background-color: #07c160;
+}
+.bgcolor4{
+  background-color: #ffffff;
+  color: coral;
+}
+
+.weui-btn-active1{
+  background-color: #fe064b;
+}
+.weui-btn-active2{
+  background-color: orange;
+}
+.weui-btn-active3{
+  background-color: #14860e;
+}
+

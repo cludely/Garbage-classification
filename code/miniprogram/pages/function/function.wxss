@@ -1,0 +1,35 @@
+/* pages/function/function.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#21a675;
+  color: #fff;
+  border-radius: 10rpx;
+}
+
+.cell {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.cell-item {
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 20rpx;
+}
+.content{
+ margin:20rpx;
+ text-align: left;
+ text-indent: 40rpx;
+}
+.hidden{
+display: none;
+  } 
+  .top-img{
+    width:100%;
+  }

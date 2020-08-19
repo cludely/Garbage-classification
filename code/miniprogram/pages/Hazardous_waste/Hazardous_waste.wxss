@@ -1,0 +1,7 @@
+/* pages/Hazardous_waste/Hazardous_waste.wxss */
+
+@import '../../style/waste.wxss';
+.list_title_color{
+  background-color: #f1acac;
+}
+

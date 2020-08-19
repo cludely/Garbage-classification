@@ -1,0 +1,4 @@
+<!--pages/team/team.wxml-->
+<image src="../../assets/images/logo.png" mode="aspectFit" class="top-img"></image>
+<view class="content">垃圾分类这个小程序是由惠州学院计算机科学与工程学院的三名在校生自主完成。对于我们来说我们是第一次制作小程序，虽然过程有些艰难，但是我们也是力求将一个好的产品展现在用户面前，使用户有更好的体验。\n</view>
+<view class="content">如果你对我们的产品感兴趣或者有什么建议，可以在"我的"界面，点击意见反馈，给我们留言，我们会认真对待你的反馈。</view>

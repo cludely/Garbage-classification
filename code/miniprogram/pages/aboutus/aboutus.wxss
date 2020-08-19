@@ -1,0 +1,41 @@
+/* pages/about.wxss */
+page{
+  background-color: #f1f1f1;
+}
+
+/* 水平居中垂直居中 */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58rpx;
+}
+/* 箭头 */
+.arrow::after {
+  content: "";
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 3rpx solid #ccc;
+  border-right: 3rpx solid #ccc;
+  transform: rotate(45deg);
+}
+
+.cell {
+  font-size: 16px;
+  background-color: #fff;
+  margin-top: 40rpx;
+}
+
+.cell-item {
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 30rpx;
+  margin-top: 10rpx;
+}
+.top-img{
+  width:100%;
+}

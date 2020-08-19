@@ -1,0 +1,84 @@
+/* pages/category/category.wxss */
+page{
+  background-color: #ffffff;
+}
+/* 轮播图 */
+swiper{
+  height: cal(100vw*340/800);
+  width: 96%;
+  margin: 0rpx auto;
+}
+.img{
+  width: 100%;
+  border-radius: 26rpx;
+}
+.nav-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 30rpx;
+  /* margin-bottom: 0rpx; */
+}
+.nav-img{
+  width: 35%;
+  height: 250rpx;
+  margin-bottom: 15rpx;
+}
+.nav-img:nth-child(2n){
+  margin-left: 70rpx;
+}
+
+.formula-box{
+  box-shadow: 10rpx 10rpx 5rpx #929292c7;
+  display: flex;
+  flex-direction: column;    /*垂直分布*/
+  border-radius: 10rpx;
+  width: 80%;
+  height: auto;
+  background-color: #ffffff;
+  border:1px solid #f1f1f1;
+  margin-top: 30rpx;
+}
+.formula-title{
+  color: red;
+  font-weight: 700;
+  text-indent: 20rpx;
+  font-size: large;
+}
+.formula-item{
+  text-indent: 20rpx;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+  /* margin-top: 0rpx; */
+}
+
+/* 授权登录按钮 */
+.login{
+  background-color: #2eb830;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+ /* 公告栏 */
+ .swiper_container {
+   margin-top: 0rpx;
+  height: 60rpx;
+  width: 100%;
+  background-color:#f1f1f1;
+}
+
+.swiper_item {
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 14rpx;
+}

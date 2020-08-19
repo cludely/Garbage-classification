@@ -1,0 +1,53 @@
+<!--pages/category/category.wxml-->
+
+<button wx:if="{{!canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="login">授权登录</button>
+
+<view wx:else>
+<!-- 轮播图 -->
+     <swiper autoplay circular indicator-dots interval="3000">
+      <swiper-item>
+        <image src="http://www.hzuljfl.cn:3000/public/img/slider/cover1.png" class='img' mode="widthFix"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="http://www.hzuljfl.cn:3000/public/img/slider/cover2.jpg" class='img' mode="widthFix"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="http://www.hzuljfl.cn:3000/public/img/slider/cover3.jpg" class='img' mode="widthFix"/>
+      </swiper-item>
+    </swiper> 
+
+    <!--公告栏-->
+<swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+    <block wx:for="{{msgList}}">
+      <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+        <swiper-item>
+          <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+  
+
+<!-- 有害垃圾、其他垃圾等图片按钮 -->
+    <view class="nav-box">
+      <image src="/assets/harmful.png" class="nav-img" bindtap="onclick1"/>
+      <image src="/assets/other.png" class="nav-img" bindtap="onclick2"/>
+      <image src="/assets/recycle.png" class="nav-img" bindtap="onclick3"/>
+      <image src="/assets/food.png" class="nav-img" bindtap="onclick4"/>
+    </view>
+
+
+    <view class="center">
+      <view class="formula-box">
+        <text class="formula-title">垃圾分类小口诀：</text>
+        <text class="formula-item">· 猪还能吃的是湿垃圾</text>
+        <text class="formula-item">· 猪也不吃的是干垃圾</text>
+        <text class="formula-item">· 猪吃了会死的是有害垃圾</text>
+        <text class="formula-item">· 可以卖出去换猪的是可回收垃圾</text>
+      </view>
+    </view>
+</view>
+
+
+
+

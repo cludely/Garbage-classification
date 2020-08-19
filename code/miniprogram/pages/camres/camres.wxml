@@ -1,0 +1,9 @@
+<!--miniprogram/pages/camres/camres.wxml-->
+<!-- 摄像头 -->
+<camera device-position="back" flash="off" binderror="error" class="camera"></camera>
+<view class="camera_box">
+  <text class="camera_btn" bindtap="takePhoto">拍照</text>
+  <!-- <image src="../../assets/images/photo1.png" class="camera_btn" bindtap="takePhoto"></image> -->
+</view>
+
+ 

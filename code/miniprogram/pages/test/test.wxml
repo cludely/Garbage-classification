@@ -1,0 +1,9 @@
+<!--miniprogram/pages/test/test.wxml-->
+<view>
+    <image class="top_img" mode="scaleToFill" src="http://www.hzuljfl.cn:3000/public/img/slider/test-img.png" lazy-load></image>
+</view>
+
+<button class="weui-btn bgcolor1" hover-class="weui-btn-active1" bindtap="go_to_answer">开始答题</button>
+<button class="weui-btn bgcolor2" hover-class="weui-btn-active2">我的错题</button>
+<button class="weui-btn bgcolor3" hover-class="weui-btn-active3" bindtap="go_to_collection">我的收藏</button>
+<button class="weui-btn bgcolor4">我的积分：{{db_userInfo.garde}}</button>
